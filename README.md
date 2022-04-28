@@ -3,6 +3,7 @@
 ASPX_Bonanza is a multi-featured aspx shell with a unique use case. It has a few features with capabilities such as the use of executing shellcode in memory. Also, this script logs in directly with the impersonating user credentials and doesn’t require the seImpersonate privilege for the user running IIS.
 
 `impersonate_bonanza.aspx` requires valid credentials to get the token and impersonate the user.
+
 `bonanza.aspx` does not require credentials and will run as the current user without impersonating.
 
 ----

